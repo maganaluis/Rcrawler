@@ -960,7 +960,7 @@ Rcrawler <- function(Website, no_cores,no_conn, MaxDepth, DIR, RequestsDelay=0,O
       Sys.sleep(1)
       cat(".")
       }
-      rm(pkg.env$Lbrowsers)
+      pkg.env$Lbrowsers<-list()
   }
   #assign("Browsers", pkg.env$browsers, envir = envi )
   #rm(Browsers, envir = envi)
